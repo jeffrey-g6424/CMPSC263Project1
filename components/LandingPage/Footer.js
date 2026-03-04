@@ -6,15 +6,15 @@ const Footer = () => {
     <FooterSection>
       <FooterContainer>
         <LeftContainer>
-          © {new Date().getFullYear()} CMPSC 263
+          © {new Date().getFullYear()} MoreFlicks
         </LeftContainer>
         <CenterContainer>
           <Link href="#">Privacy Policy</Link> | <Link href="#">Terms of Service</Link>
         </CenterContainer>
         <RightContainer>
-          <SocialIcon href="#" aria-label="Facebook">FB</SocialIcon>
-          <SocialIcon href="#" aria-label="Twitter">TW</SocialIcon>
-          <SocialIcon href="#" aria-label="Instagram">IG</SocialIcon>
+          <SocialIcon href="https://www.facebook.com/" aria-label="Facebook">FB</SocialIcon>
+          <SocialIcon href="https://x.com/" aria-label="Twitter">TW</SocialIcon>
+          <SocialIcon href="https://www.instagram.com/?hl=en" aria-label="Instagram">IG</SocialIcon>
         </RightContainer>
       </FooterContainer>
     </FooterSection>
@@ -22,11 +22,18 @@ const Footer = () => {
 };
 
 const FooterSection = styled.footer`
-
+  width: 100%;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  background: #c99a6bff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 `;
 
 const FooterContainer = styled.div`
-
 `;
 
 const LeftContainer = styled.div``;
@@ -42,11 +49,11 @@ const Link = styled.a`
 `;
 
 const SocialIcon = styled.a`
-  color: #fff;
+  color: #000;
   text-decoration: none;
   font-size: 1.5rem;
   &:hover {
-    color: #007bff;
+    color: #ffffff;
   }
 `;
 
